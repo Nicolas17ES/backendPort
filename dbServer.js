@@ -62,7 +62,7 @@ global.db = db;
 
 db.getConnection((err, connection) => {
     // if (err) throw (err)
-    console.log("DB connected successful: " + connection.threadId)
+    console.log("DB connected successful: ")
 })
 
 const PORT = 3001
