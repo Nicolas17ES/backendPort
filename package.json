@@ -2,7 +2,7 @@
   "name": "dashboard",
   "version": "1.0.0",
   "description": "",
-  "main": "dbServer.js",
+  "main": "index.js",
   "scripts": {
     "start": "node dbServer.js",
     "devStart": "nodemon dbServer.js",
