@@ -61,12 +61,12 @@ const db = mysql.createPool({
 global.db = db;
 
 db.getConnection((err, connection) => {
-    // if (err) throw (err)
+    if (err) throw (err)
     console.log("DB connected successful: ")
 })
 
-const PORT = 3001
-app.listen(process.env.PORT || PORT, () => {
+const port = 3001
+app.listen(process.env.PORT || port, () => {
     console.log(`Server Started on port ${PORT}...`);
 })
 
