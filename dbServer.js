@@ -47,10 +47,10 @@ const DB_HOST = "127.0.0.1"
 const DB_USER = "nico"
 const DB_PASSWORD = "12345"
 const DB_DATABASE = "dasboard"
-const DB_PORT = 3306
+// const DB_PORT = 3306
 
 const db = mysql.createPool({
-    connectionLimit: 100,
+    // connectionLimit: 100,
     host: DB_HOST,
     user: DB_USER,
     password: DB_PASSWORD,
@@ -58,7 +58,7 @@ const db = mysql.createPool({
 })
 
 
-global.db = db;
+// global.db = db;
 
 db.getConnection((err, connection) => {
     if (err) throw (err)
