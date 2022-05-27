@@ -43,11 +43,11 @@ app.use(fileUpload());
 
 
 
-const DB_HOST = process.env.DB_HOST
-const DB_USER = process.env.DB_USER
-const DB_PASSWORD = process.env.DB_PASSWORD
-const DB_DATABASE = process.env.DB_DATABASE
-const DB_PORT = process.env.DB_PORT
+const DB_HOST = "127.0.0.1"
+const DB_USER = "nico"
+const DB_PASSWORD = "12345"
+const DB_DATABASE = "dasboard"
+const DB_PORT = 3306
 
 const db = mysql.createPool({
     connectionLimit: 100,
@@ -65,9 +65,9 @@ db.getConnection((err, connection) => {
     console.log("DB connected successful: " + connection.threadId)
 })
 
-const port = process.env.PORT
-app.listen(port,
-    () => console.log(`Server Started on port ${port}...`))
+const PORT = process.env.PORT
+app.listen(PORT,
+    () => console.log(`Server Started on port ${PORT}...`))
 
 
 
