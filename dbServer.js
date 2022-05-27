@@ -47,7 +47,7 @@ const DB_HOST = "127.0.0.1"
 const DB_USER = "nico"
 const DB_PASSWORD = "12345"
 const DB_DATABASE = "dasboard"
-// const DB_PORT = 3306
+const DB_PORT = 3306
 
 const db = mysql.createPool({
     connectionLimit: 100,
