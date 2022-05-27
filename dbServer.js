@@ -1,23 +1,23 @@
 const express = require("express")
 const app = express()
-var session = require('express-session')
-const cookieSession = require("cookie-session")
+
+// const cookieSession = require("cookie-session")
 const mysql = require("mysql")
 
 const cors = require('cors');
-const generateAccessToken = require("./generateAccessToken")
-const jwt = require("jsonwebtoken")
-const { authorizationAdmin } = require('./authAdmin')
-const { authorizationUser } = require('./userAuth')
-const passport = require("passport");
+// const generateAccessToken = require("./generateAccessToken")
+// const jwt = require("jsonwebtoken")
+// const { authorizationAdmin } = require('./authAdmin')
+// const { authorizationUser } = require('./userAuth')
+// const passport = require("passport");
 var bodyParser = require('body-parser')
 const cookieParser = require("cookie-parser")
-const fetch = require('cross-fetch');
+// const fetch = require('cross-fetch');
 const fileUpload = require('express-fileupload');
-const routes = require('./routes');
+// const routes = require('./routes');
 const path = require('path');
 
-require('./passport-setup')
+// require('./passport-setup')
 require("dotenv").config()
 
 //ejs//
