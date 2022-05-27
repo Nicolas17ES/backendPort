@@ -65,9 +65,10 @@ db.getConnection((err, connection) => {
     console.log("DB connected successful: " + connection.threadId)
 })
 
-const PORT = process.env.PORT
-app.listen(PORT,
-    () => console.log(`Server Started on port ${PORT}...`))
+const PORT = 3001
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server Started on port ${PORT}...`);
+})
 
 
 
