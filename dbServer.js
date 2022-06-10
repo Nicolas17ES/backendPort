@@ -30,7 +30,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     credentials: true,
-    origin: ['https://incredible-twilight-a576f6.netlify.app']
+    origin: ['https://nicolas-luque.netlify.app/feedback']
 }))
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
