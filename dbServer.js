@@ -30,7 +30,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     credentials: true,
-    origin: ['https://nicolas-luque.netlify.app']
+    origin: ['http://www.nicolas-luque.com']
 }))
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
