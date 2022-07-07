@@ -30,7 +30,7 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     credentials: true,
-    origin: ['http://www.nicolas-luque.com']
+    origin: ['https://www.nicolas-luque.com']
 }))
 app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
